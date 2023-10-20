@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>practical</title>
+    <style>
+        .box{
+            width: 50%;
+            margin: auto;
+            background-color: red;
+            height: 80vh;
+            overflow: hidden;
+        }
+        .head1{ 
+            text-align: center;
+            font-size: 3rem;
+            transform: translate(0, 16rem);
+            animation: head1 20s ease-in-out 0s infinite;
+        }
+        .head2{
+            text-align: center;
+            font-size: 3rem;
+            transform: translate(0, 33rem);
+            animation: head2 20s ease-in-out 0s infinite;
+        }
+        @keyframes head1 {
+            0%, 20%{
+                transform: translate(0, 16rem);
+            }
+            25%, 35%{
+                transform: translate(0, 35rem);
+            }
+        }
+        @keyframes head2{
+            0%, 35%{
+                transform: translate(0, 34rem);
+            }
+            40%{
+                transform: translate(  0, 10rem);
+            }
+            60%{
+                transform: translate();
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <h1 class="head1">This is cool</h1>
+        <h1 class="head2">This is awesome</h1>
+    </div>
+</body>
+</html>

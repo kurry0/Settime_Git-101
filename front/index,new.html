@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+     .box{
+        width: 200px;
+        height: 200px;
+        background: linear-gradient(to left,red, blue);
+        margin-top: 1rem;
+        transition-property: all;
+        transition-duration: 1s; 
+        transition-delay: 0s;
+        transition-timing-function: ease-in-out;
+        transition: all 1s ease-in-out 0s;
+     }
+     .box:hover{
+        transform: translate(40%,0) rotate(45deg);
+        background: linear-gradient(to left, green, red);
+     }
+     /* .box:hover{
+        transform: rotate(45deg);
+     }
+     .box:hover{
+        transform: skew(40deg);
+     }
+     .box:hover{
+        transform: scale(1.2);
+     } */
+    </style>
+</head>
+<body>
+    <div class="box" ></div>
+    <div class="box" ></div>
+    <div class="box" ></div>
+    <div class="box"></div>
+</body>
+</html>
